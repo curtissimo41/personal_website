@@ -1,0 +1,41 @@
+/*-----------------------------------------------------------------------------
+-----------------------------------Variables-----------------------------------
+-----------------------------------------------------------------------------*/
+:root {
+    /* Default element styling */
+    --body-bkgd-color: rgb(30, 30, 30);
+    --navbar-bkgd: rgba(0, 0, 0, 0.5);
+    --navbar-btn-bkgd: rgb(69, 69, 69);
+    --ul-font: Georgia, sans-serif;
+    --division-line: White;
+    --new-word-color: Khaki;
+
+    /* Header info */
+    --header-font-size: 78px;
+    --header-color: rgb(255, 163, 0);
+    --header-font-family: Montserrat, sans-serif;
+    --header-bkgd-color: rgb(69, 69, 69);
+
+    --header-minor-font: Ubuntu, sans-serif;
+    --header-minor-size: 26px;
+
+    /* Slide background colors */
+    --slide1-bkgd: rgb(50, 50, 50);
+    --slide2-bkgd: rgb(65, 65, 65);
+    --slide3-bkgd: rgb(80, 80, 80);
+
+    /* Slide font colors */
+    --slide1-color: rgb(205, 205, 205);
+    --slide2-color: rgb(205, 205, 205);
+    --slide3-color: rgb(205, 205, 205);
+
+    /* Slide title font colors */
+    --slide1-title-color: rgb(230, 121, 0);
+    --slide2-title-color: rgb(230, 64, 0);
+    --slide3-title-color: rgb(230, 4, 0);
+
+    /* Slide border colors */
+    --slide1-border-color: rgb(205, 205, 205);
+    --slide2-border-color: rgb(185, 185, 185);
+    --slide3-border-color: rgb(165, 165, 165);
+}

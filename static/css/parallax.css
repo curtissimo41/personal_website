@@ -1,0 +1,219 @@
+.parallax1 {
+    /* The image used */
+    background-image: url("http://wallup.net/wp-content/uploads/2015/12/198660-palm_trees-resort-beach-tropical-water-bungalow-sea-summer-nature-landscape.jpg");
+
+    /* Set a specific height */
+    min-height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 {
+    /* The image used */
+    background-image: url("http://wallup.net/wp-content/uploads/2015/12/198959-fall-fence-trees-mountain-forest-Chile-Patagonia-snowy_peak-grass-cottage-yellow-orange-nature-landscape.jpg");
+
+    /* Set a specific height */
+    min-height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*-------------------------------------------------------*/
+
+a {
+	text-decoration: none!important;
+}
+
+body {
+	background-color: Azure;
+}
+
+.Bunwave {
+	display: block;
+	margin: auto;
+	max-width: 10%;
+	max-height: 10%;
+	padding-bottom: 15px;
+}
+
+.para-back {
+	color: RoyalBlue;
+	background-color: rgba(240, 255, 255, 0.9);
+	padding: 10px;
+}
+
+.division {
+	border-bottom: thick solid OrangeRed;
+	padding-bottom: 30px;
+}
+
+.div_reg {
+	padding-top: 30px;
+}
+
+.float {
+	float: left;
+}
+
+.header {
+	font-size: 78px;
+	text-align: center;
+	color: Black;
+	font-family: Montserrat, sans-serif;
+	background-color: rgba(240, 255, 255, 0.5);
+	margin: 0;
+}
+
+.Horiz_list {
+	display: inline;
+	padding: 10px;
+	background-color: AquaMarine;
+	font-family: Ubuntu, sans-serif;
+	font-size: 24px;
+	color: RoyalBlue;
+	border-radius: 8px;
+}
+
+.Horiz_list:active {
+	text-decoration: none;
+	color: Cornsilk;
+	background-color: DodgerBlue;
+}
+
+.Horiz_list:hover {
+	color: AquaMarine;
+	background-color: RoyalBlue;
+}
+
+li {
+    height: 30px;
+    line-height: 30px;
+}
+
+.medseagreen-back {
+	color: RoyalBlue;
+	background-color: MediumSeaGreen;
+	padding: 10px;
+}
+
+.name_form {
+	text-indent: 0px;
+}
+
+#Navbar {
+	list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(240, 255, 255, 0.5);
+}
+
+option {
+	background-color: Cornsilk;
+	color: Coral;
+}
+
+.seagreen-back {
+	color: RoyalBlue;
+	background-color: SeaGreen;
+	padding: 10px;
+}
+
+.paragraph {
+	font-size: 16px;
+	font-family: Georgia, sans-serif;
+	font-weight: bold;
+	padding: 25px;
+	margin: 0;
+}
+
+.para_header {
+	text-align: center;
+}
+
+.para_reg {
+	display: block;
+	margin: auto;
+	text-indent: 2em;
+	text-align: left;
+	word-wrap: break-word;
+	width: 500px;
+	border: 6px solid OrangeRed;
+	border-radius: 25px;
+}
+
+.para_no_indent {
+	text-indent: 0em;
+}
+
+.resize {
+	max-width: 10%;
+	max-height: 10%;
+}
+
+select {
+	/* styling */
+	border: thin;
+	border-radius: 6px;
+	display: inline-block;
+	font-family: Georgia, sans-serif;
+	line-height: 1.5em;
+	padding: 0.5em 3.5em 0.5em 1em;
+	
+	/* reset */
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+select.minimal {
+	background-image:
+		linear-gradient(45deg, transparent 50%, gray 50%),
+		linear-gradient(135deg, gray 50%, transparent 50%),
+		linear-gradient(to right, #ccc, #ccc);
+	background-position:
+		calc(100% - 20px) calc(1em + 2px),
+		calc(100% - 15px) calc(1em + 2px),
+		calc(100% - 2.5em) 0.5em;
+	background-size:
+		5px 5px,
+		5px 5px,
+		1px 1.5em;
+	background-repeat: no-repeat;
+}
+
+select.minimal:focus {
+	background-image:
+		linear-gradient(45deg, green 50%, transparent 50%),
+		linear-gradient(135deg, transparent 50%, green 50%),
+		linear-gradient(to right, #ccc, #ccc);
+	background-position:
+		calc(100% - 15px) 1em,
+		calc(100% - 20px) 1em,
+		calc(100% - 2.5em) 0.5em;
+	background-size:
+		5px 5px,
+		5px 5px,
+		1px 1.5em;
+	background-repeat: no-repeat;
+	outline: 0;
+}
+
+ul {
+	font-size: 16px;
+	font-family: Georgia, sans-serif;
+	text-align: left;
+	display: block;
+	padding-left: 0pt;
+}

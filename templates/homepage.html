@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!--Links to Google fonts used on this webpage-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" 
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" 
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" 
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora" 
+        rel="stylesheet">
+
+<!--Linked CSS stylesheet file, JS files, Bootstrap, & React-->
+    <script type="text/javascript" 
+        src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+        
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" 
+        rel="stylesheet" type="text/css">
+        
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    </script>
+
+    <link href="{{ url_for('static', filename='css/style1.css') }}"
+          type="text/css" rel="stylesheet" id="style-var">
+    <link href="{{ url_for('static', filename='css/def_page.css') }}" 
+        type="text/css" rel="stylesheet">
+    
+    <script type="text/javascript" 
+        src="{{ url_for('static', filename='js/homepage.js') }}"></script>
+    <script type="text/javascript" 
+        src="{{ url_for('static', filename='js/def_page.js') }}"></script>
+    
+<!--
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.6/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.6/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+    
+    <script type="text/babel"
+        src="{{ url_for('static', filename='js/react_stuff.js') }}"></script>
+-->
+        
+<!--Extra header info-->    
+    <meta charset="UTF-8">
+    <title>Curtis' test website</title>
+</head>
+
+<!--The Good Stuff-->
+<body>
+
+    <ul id="Navbar">
+        <a href="/"> <li class="Horiz_list">Home</li> </a>
+        <a href="/experience"> <li class="Horiz_list">Experience</li> </a>
+        <a href="/contact_me"> <li class="Horiz_list">Contact Me</li> </a>
+        <a href="/CD-L"> <li class="Horiz_list">CD-L</li> </a>
+        <a href="/parallax_test"> <li class="Horiz_list">Parallax</li> </a>
+    </ul>
+
+    <div class="division padding-top">
+        <h1 class="header"> Welcome to my test website!<br>
+        <p class="paragraph">↓↓↓ Click here to see my LinkedIn page! ↓↓↓</p>
+            <a href="https://www.linkedin.com/in/geigecur/" target="_blank">
+                <img class="resize" src="{{ url_for('static', 
+                                         filename='resources/cxg8134.jpg') }}">
+            </a>
+        </h1>
+
+        <div class="slide1">
+            <h2 class="slide1-para paragraph para_reg">
+                <img class="Bunwave" 
+                     src="{{ url_for('static', 
+                                     filename='resources/BunWave.png') }}">
+                <p>
+                    Here in this paragraph, I will just type some random 
+                    nonsense and demonstrate some small understanding of 
+                    HTML/CSS. In fact, I'm going to make this paragraph MUCH 
+                    longer than I originally intended so that I can make easier
+                    work of fixing the image resizing problem that I am 
+                    currently having with this website!
+                </p>
+            </h2>
+        </div>
+
+        <div class="slide2">
+            <h2 class="slide2-para paragraph para_reg">
+                <img class="Bunwave" 
+                 src="{{ url_for('static', 
+                                 filename='resources/BunWave.png') }}">
+                <p>
+                    This is the second paragraph. There isn't a whole bunch of 
+                    content that I was going to write here, so instead I've
+                    picked to ramble endlessly to make the paragraph look 
+                    bigger, yet have no real purpose. Again, this is purely for 
+                    some testing purposes, so it will look pretty silly to start
+                    off!
+                </p>
+            </h2>
+        </div>
+        
+        <div class="slide3">
+            <h2 class="slide3-para paragraph para_reg">
+                <img class="Bunwave" 
+                 src="{{ url_for('static', 
+                                 filename='resources/BunWave.png') }}">
+                <p>
+                    Third paragraph, here we are! Now, this one is mainly a 
+                    filler paragraph just so that I can test out all sorts of
+                    color schemes on the main page. I'm thinking that there will
+                    only be three different color styles to choose from, but I 
+                    guess we'll find out as I continue building the site!
+                </p>
+            </h2>
+        </div>
+    </div>
+
+    <div class="division div_reg">
+        <h1 class="header"> About Me </h1>
+        <div class="slide1">
+            <h2 class="slide1-para paragraph para_reg">
+                <img class="Bunwave" 
+                 src="{{ url_for('static', 
+                                 filename='resources/BunWave.png') }}">
+                <p>Below is a quick bulleted list of some items I decided to 
+                   throw in:</p>
+                <ul>
+                    <li>My name is Curtis</li>
+                    <li>This is my website</li>
+                    <li>I built this from scratch!</li>
+                </ul>
+            </h2>
+        </div>
+    </div>
+
+    <div class="division div_reg">
+    
+        <h1 class="header"> Fun Little Widgets! </h1>
+        
+        <div class="slide1">
+            <h2 class="slide1-para paragraph para_reg">
+                <p class="slide1-title section-title">Random Word Generator</p>
+                <input type="button" id="showButt" class="btn btn-primary" 
+                    value="Make Word">
+                <p>Your new word is: <span id="newWord"></span></p>
+                <p><span id="clickAmt">0</span> words generated.</p>
+            </h2>
+        </div>
+        
+        <div class="slide2">
+            <h2 class="slide2-para paragraph para_reg">
+                <p class="slide2-title section-title">Unit Conversions</p>
+                <select class="minimal btn-primary slide2-sel" name="convert">
+                    <option class="slide1-opt" selected="selected"
+                        value="default">Select an option...</option>
+                    <option class="slide1-opt" 
+                        value="temperature">Temperature</option>
+                    <option class="slide1-opt" 
+                        value="vol-liquid">Liquid Volume</option>
+                    <option class="slide1-opt" 
+                        value="length">Length</option>
+                    <option class="slide1-opt" 
+                        value="weight">Weight</option>
+                <span class="caret"></span>
+                </select>
+            </h2>
+        </div>
+        
+        <div class="slide3">
+            <h2 class="slide3-para paragraph para_reg">
+                <p class="slide2-title section-title">Rangoli Time</p>
+                <div id="root"></div>
+
+                <script type="text/babel">
+                    ReactDOM.render(
+                        <div>
+                            <FontChooser min='4' max='40' size='16' 
+                             text='Fun with React!' 
+                            bold='false'/>
+                        </div>,    
+                        $('#container')
+                    );
+                </script>
+                
+            </h2>
+        </div>
+        
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <!--Links to Google fonts used on this webpage-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet"> 
+
+    <!--Linked CSS stylesheet file & Bootstrap-->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="{{ url_for('static', filename='css/style1.css') }}"
+          type="text/css" rel="stylesheet" id="style-var">
+    <link href="{{ url_for('static', filename='css/def_page.css') }}" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="{{ url_for('static', filename='js/def_page.js') }}"></script>
+    
+    <meta charset="UTF-8">
+    <title>Curtis' test website</title>
+</head>
+
+<body>
+    
+    <ul id="Navbar">
+        <a href="/"> <li class="Horiz_list">Home</li> </a>
+        <a href="/experience"> <li class="Horiz_list">Experience</li> </a>
+        <a href="/contact_me"> <li class="Horiz_list">Contact Me</li> </a>
+        <a href="/CD-L"> <li class="Horiz_list">CD-L</li> </a>
+        <a href="/parallax_test"> <li class="Horiz_list">Parallax Test</li> </a>
+    </ul>
+    
+    <div class="division padding-top">
+        <h1 class="header">
+            Confirm Info
+        </h1>
+        <div class="slide1">
+            <h2 class="paragraph para_reg para_no_indent">
+            -First name: {{firstname}}<br>
+            -Last name: {{lastname}}<br>
+            -Age: {{age}} y/o<br>
+            -E-mail address: {{email}}<br>
+            -Password: {{password}}<br>
+            -Main programming language: {{language}}<br>
+            -{{language}} skill level: {{skill_lvl}}<br>
+            -College: {{school}}<br><br>
+            Is this correct? (Y/N)
+            </h2>
+        </div>
+    </div>
+</body>
+</html>

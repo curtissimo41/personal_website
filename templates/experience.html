@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Links to Google fonts used on this webpage-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" 
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" 
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" 
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora" 
+        rel="stylesheet"> 
+
+    <!--Linked CSS stylesheet file & Bootstrap-->
+    <script type="text/javascript" 
+        src="{{ url_for('static', filename='js/jquery.min.js') }}"> </script>
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}"
+        rel="stylesheet" type="text/css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    </script>
+    <link href="{{ url_for('static', filename='css/style1.css') }}"
+          type="text/css" rel="stylesheet" id="style-var">
+    <link href="{{ url_for('static', filename='css/def_page.css') }}" 
+        type="text/css" rel="stylesheet">
+    <script type="text/javascript" 
+        src="{{ url_for('static', filename='js/def_page.js') }}"></script>
+
+    <meta charset="UTF-8">
+    <title>Curtis' test website</title>
+</head>
+
+<body>
+
+    <ul id="Navbar">
+        <a href="/"> <li class="Horiz_list">Home</li> </a>
+        <a href="/experience"> <li class="Horiz_list">Experience</li> </a>
+        <a href="/contact_me"> <li class="Horiz_list">Contact Me</li> </a>
+        <a href="/CD-L"> <li class="Horiz_list">CD-L</li> </a>
+        <a href="/parallax_test"> <li class="Horiz_list">Parallax Test</li></a>
+    </ul>
+
+    <div class="division padding-top">
+        <h1 class="header">Experience</h1>
+        
+        <div class="slide1">
+            <h2 class="slide1-para paragraph para_reg para_no_indent">
+                <p class="slide1-title section-title">Education</p>
+                
+                <p class="header-minor">ROCHESTER INSTITUTE OF TECHNOLOGY |
+                                           Rochester, NY<br>
+                    <div style="text-align:center;">Bachelors of Science in 
+                                         Computer Engineering</div>
+                    <div style="text-align:center;">Immersion in American 
+                                         Sign Language</div>
+                    <div style="text-align:center;">Expected May 2019</div>
+                <br>
+                
+                <p class="header-minor">EMMAUS HIGH SCHOOL | Emmaus, PA
+                    <div style="text-align:center;">High School Diploma, 
+                                         2014</div>
+                <br>
+                
+                <p class="header-minor">ST. THOMAS MORE | Allentown, PA 
+                    <div style="text-align:center;">Primary School (K-8)</div>
+                
+            </h2>
+        </div>
+        
+        <div class="slide2">
+            <h2 class="slide2-para paragraph para_reg para_no_indent">
+                <p class="slide2-title section-title">Skills</p>
+                
+                <p class="header-minor">Languages:</p>
+                <ul>
+                    <li>Assembly (< 1 year)</li>    
+                    <li>C / C++ (1 year)</li>
+                    <li>CSS / Bootstrap (< 1 year)</li>
+                    <li>HTML5 / Jinja2 (< 1 year)</li>
+                    <li>Java (< 1 year)</li>
+                    <li>JavaScript / jQuery (< 1 year)</li>
+                    <li>Python / Flask (1 year)</li>
+                    <li>SQL (< 1 year)</li>
+                    <li>Swift (< 1 year)</li>
+                    <li>VHDL (1 year)</li>
+                </ul>
+                <br>
+
+                <div class="borderline"></div> <br>
+
+                <p class="header-minor">Operating Systems:<br>
+                    <ul>
+                        <li>OSX / macOS</li>
+                        <li>Android / iOS</li>
+                        <li>Windows 7 & 10</li>
+                        <li>Linux</li>
+                    </ul>
+                <br>
+
+                <div class="borderline"></div> <br>
+                
+                <p class="header-minor">Software:<br>
+                    <ul>
+                        <li>PyCharm / IntelliJ</li>
+                        <li>Notepad++ / Sublime Text</li>
+                        <li>Visual Studio</li>
+                        <li>Altera Quartus / ModelSim</li>
+                        <li>Xilinx ISE</li>
+                        <li>Command Line / Terminal / Git Version Control</li>
+                    </ul>
+                <br>
+
+                <div class="borderline"></div> <br>
+                
+                <p class="header-minor">Hardware:<br>
+                    <ul>
+                        <li>AGILENT-XSO 3012A Oscilloscope</li>
+                        <li>Digital Multimeter</li>
+                        <li>Xilinx FPGA</li>
+                        <li>Freedom Freescale KL46Z FPGA</li>
+                    </ul>
+                <br>
+
+                <div class="borderline"></div> <br>
+                
+                <p class="header-minor">Other:<br>
+                    <ul>
+                        <li>U.S. Department of Defense Secret Clearance</li>
+                    </ul>
+
+            </h2>
+        </div>
+        
+        <div class="slide3">
+            <h2 class="slide3-para paragraph para_reg para_no_indent">
+                <p class="slide2-title section-title">
+                Courses, Projects, & Labs</p>
+            
+                <p class="header-minor">Applied Programming
+                    <div class="tabchar">Created programs in C / ANSI C to put 
+                    to use methods and applications learned in the classroom 
+                    lectures. Made use of Xwindows, GCC, makefiles, and Linux 
+                    tar commands to create visuals, compile code, apply 
+                    standards for compiling the programs, and compress files 
+                    for submission. Topics covered include dynamic arrays / 
+                    dynamic memory, performance evaluation using timers, linked
+                    lists, rootfinding methods (bisection, secant, Newton, & 
+                    Laguerre methods), etc.
+                    </div>
+                <br>
+                    
+                <p class="header-minor">Assembly Language
+                    <div class="tabchar">Implemented key concepts studied 
+                    in class using Keil IDE software to construct various 
+                    programs using Assembly language and create real-world
+                    applications using a Freedom Freescale KL46Z FPGA board.
+                    Topics include basic arithmetic operations, memory 
+                    management, conditional branching, polled I/O, FIFO queue
+                    operations, mixed C/Assembly multiprecision addition, 
+                    digital-analog signal conversion & servo operations, and a
+                    trivia game project dealing with timers and LED management.
+                    </div>
+                <br>
+                    
+                <p class="header-minor">Circuits I & II
+                    <div class="tabchar">Studied basic & complex circuit 
+                    structures & principles and built physical circuits on
+                    breadboards in various lab exercises (Circuits I only).
+                    Topics covered across the two courses include Voltage & 
+                    Current division, Nodal & Mesh analysis, Thevenin 
+                    equivalence, Op-Amps, Resistor-Capacitor circuits, source
+                    transformation, sinusoidal circuit response, AC power
+                    circuit analysis, three phase circuits, magnetically 
+                    coupled circuits, frequency response, & two-port networks.
+                    </div>
+                <br>
+                    
+                <p class="header-minor">Computer Science 1 & 2
+                    <div class="tabchar">Learned basic to intermediate skills
+                    in both Python (CS 1) and Java (CS 2). Instruction was
+                    supplemented with weekly homework & lab assignments 
+                    pertaining to the week's lectures. Concepts learned include
+                    recursion/iteration, time complexity, sorting algorithms, 
+                    search trees, and object-oriented programming.
+                    </div>
+                <br>
+                    
+                <p class="header-minor">Digital Systems Design I & II
+                    <div class="tabchar">Various digital logic circuits 
+                    were analyzed schematically & tested on Altera & Xilinx    
+                    FPGA hardware boards. Basic-Advanced VHDL was applied 
+                    to design low-level circuits. Complex structures
+                    include SRAM, ALU, 8-bit Multipliers, etc. </div>
+                <br>
+                    
+                <p class="header-minor">Electronics I
+                    <div class="tabchar">Studied fundamental circuit elements
+                    through lab exercises, including differential Op-Amps,
+                    MOSFET devices, Diodes, etc., & observed behaviors using
+                    breadboards, multimeters, oscilloscopes, & power supplies.
+                    </div>
+                <br>
+                    
+                <p class="header-minor">Software Engineering
+                    <div class="tabchar">Studied various workflow principles
+                    associated with software development, including unit 
+                    testing, design documentation, agile development, code 
+                    reviews, source control, acceptance testing, etc. Worked in
+                    a team of 5 to create a mock software program, written in 
+                    Django using the PyCharm IDE, and applied common business 
+                    practice to market and sell the product.</div>
+                <br>
+                    
+            </h2>
+        </div>
+        
+        <div class="slide1">
+            <h2 class="slide1-para paragraph para_reg para_no_indent">
+                <p class="slide1-title section-title">Previous Work 
+                                                      Experience</p>
+                
+                <p class="header-minor">Cyber Security Analyst Intern<br>
+                    Adapt Forward, LLC | North Charleston, SC |
+                    July 2017 - Present
+                    <div class="tabchar">Work in a team to build & maintain 
+                    tools used by government agencies to detect cybersecurity
+                    threats on machines and entire networks. Languages used
+                    include Python (w/ Flask), HTML5 (w/ Jinja2), CSS (w/
+                    Bootstrap), JavaScript (w/ jQuery, AJAX, & React), & SQL.
+                    </div>
+                <br>
+                
+                <p class="header-minor">Modular Systems Development Intern<br>
+                    Diebold-Nixdorf | North Canton, OH |
+                    August 2016 - December 2016
+                    <div class="tabchar">Assisted in building & testing
+                    software (written in C++) used globally in company ATM
+                    machines. Collaborated in multiple team settings to
+                    support development & help achieve goals.</div>
+                <br>
+                
+                <p class="header-minor">Recreation Attendant & Supervisor<br>
+                    RIT | Rochester, NY | May 2015 - Present
+                    <div class="tabchar">Interact with patrons and provide 
+                    assistance in order to ensure optimal satisfaction with the
+                    facilities. Maintain safe facility environment, train new
+                    employees, and help manage the work force.</div>
+                <br>
+                
+                <p class="header-minor">Food Service & Kitchen Assistant<br>
+                    Artesano @ RIT | Rochester, NY | January 2015 - May 2015
+                    <div class="tabchar">Assisted with food preparation and 
+                    delivery to other stores around campus, along with 
+                    providing customer service and helping satisfy demands.
+                    </div>
+                <br>
+                
+                <p class="header-minor">In-Store Operations<br>
+                    Papa John's Pizza | Trexlertown, PA |
+                    May 2013 - August 2016
+                    <div class="tabchar">Responsible for new employee training
+                    & keeping workplace organized and controlled.</div>
+                <br>
+                
+                <p class="header-minor">Food Service<br>
+                    Dorney Park & Wildwater Kingdom | Allentown, PA |
+                    May 2011 - November 2011
+                    <div class="tabchar">Seasonal employment in food service. 
+                    Worked in team setting to satisfy patrons & provide 
+                    customer service.
+                    </div>
+                <br>
+                
+            </h2>
+        </div>
+        
+    </div>
+</body>
+</html>

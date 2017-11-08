@@ -1,0 +1,340 @@
+/*-----------------------------------------------------------------------------
+---------------------------------HTML Elements---------------------------------
+-----------------------------------------------------------------------------*/
+a {
+	text-decoration: none!important;
+}
+
+a:link {
+	color: Azure;
+}
+
+a:visited {
+	color: Orange;
+}
+
+a:hover {
+	color: White;
+}
+
+body {
+	background-color: var(--body-bkgd-color);
+}
+
+input {
+	color: black;	
+}
+
+li {
+    height: 30px;
+    line-height: 30px;
+    font-family: Lora;
+	font-size: 18px;
+}
+
+select {
+	/* styling */
+	border: thin;
+	border-radius: 6px;
+	display: inline-block;
+	font-family: Georgia, sans-serif;
+	line-height: 1.5em;
+	padding: 0.5em 3.5em 0.5em 1em;
+	
+	/* reset */
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+select.minimal {
+	background-image:
+		linear-gradient(45deg, transparent 50%, gray 50%),
+		linear-gradient(135deg, gray 50%, transparent 50%),
+		linear-gradient(to right, #ccc, #ccc);
+	background-position:
+		calc(100% - 20px) calc(1em + 2px),
+		calc(100% - 15px) calc(1em + 2px),
+		calc(100% - 2.5em) 0.5em;
+	background-size:
+		5px 5px,
+		5px 5px,
+		1px 1.5em;
+	background-repeat: no-repeat;
+}
+
+select.minimal:focus {
+	background-image:
+		linear-gradient(45deg, green 50%, transparent 50%),
+		linear-gradient(135deg, transparent 50%, green 50%),
+		linear-gradient(to right, #ccc, #ccc);
+	background-position:
+		calc(100% - 15px) 1em,
+		calc(100% - 20px) 1em,
+		calc(100% - 2.5em) 0.5em;
+	background-size:
+		5px 5px,
+		5px 5px,
+		1px 1.5em;
+	background-repeat: no-repeat;
+	outline: 0;
+}
+
+ul {
+	font-size: 16px;
+	font-family: var(--ul-font);
+	text-align: left;
+	display: block;
+	padding-left: 0pt;
+}
+
+/*-----------------------------------------------------------------------------
+----------------------------------Slide Styles---------------------------------
+-----------------------------------------------------------------------------*/
+.header {
+	font-size: var(--header-font-size);
+	text-align: center;
+	color: var(--header-color);
+	font-family: var(--header-font-family);
+	background-color: var(--header-bkgd-color);
+	margin: 0;
+}
+
+.header-parallax {
+	background-color: rgba(255, 255, 255, 0.5);
+	color: Black;
+	font-size: 60px;
+}
+
+.header-minor {
+	font-family: var(--header-minor-font);
+	font-size: var(--header-minor-size);
+	text-align: center;
+}
+
+.slide1 {
+	background-color: var(--slide1-bkgd);
+	color: var(--slide1-color);
+	padding: 10px;
+}
+
+.slide1-para {
+	border-color: var(--slide1-border-color);
+}
+
+.slide1-title {
+	color: var(--slide1-title-color);
+}
+
+.slide2 {
+	background-color: var(--slide2-bkgd);
+	color: var(--slide2-color);
+	padding: 10px;
+}
+
+.slide2-opt {
+	color: White;
+}
+
+.slide2-para {
+	border-color: var(--slide2-border-color);
+}
+
+.slide2-sel {
+	background-color: FireBrick;
+	color: White;
+}
+
+.slide2-title {
+	color: var(--slide2-title-color);
+}
+
+.slide3 {
+	background-color: var(--slide3-bkgd);
+	color: var(--slide3-color);
+	padding: 10px;
+}
+
+.slide3-para {
+	border-color: var(--slide3-border-color);
+}
+
+.slide3-title {
+	background-color: var(--slide3-title-color);
+}
+
+/*-----------------------------------------------------------------------------
+----------------------------------Extra Stuff----------------------------------
+-----------------------------------------------------------------------------*/
+.borderline {
+	border-style: Solid;
+	border-color: Black;
+	border-width: 1px;
+}
+
+.Bunwave {
+	display: block;
+	margin: auto;
+	max-width: 6%;
+	max-height: 6%;
+	padding-bottom: 15px;
+}
+
+.division {
+	border-bottom: thick solid var(--division-line);
+	padding-bottom: 30px;
+}
+
+.div_reg {
+	padding-top: 30px;
+}
+
+.float {
+	float: left;
+}
+
+.Horiz_list {
+	display: inline;
+	padding: 10px;
+	background-color: var(--navbar-btn-bkgd);
+	transition: background-color 0.5s ease, color 0.5s ease;
+	font-family: Ubuntu, sans-serif;
+	font-size: 24px;
+	color: rgb(255, 163, 0);
+	border-radius: 8px;
+}
+
+.name_form {
+	text-indent: 0px;
+}
+
+#Navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: var(--navbar-bkgd);
+	z-index: 999;
+	list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+#newWord {
+	font-family: Ubuntu, sans-serif;
+	color: var(--new-word-color);
+	font-size: 24;
+}
+
+.padding-top {
+	padding-top: 70px;	
+}
+
+.paragraph {
+	font-size: 16px;
+	font-family: Georgia, sans-serif;
+	font-weight: bold;
+	line-height: 2;
+	padding: 25px;
+	margin: 0;
+}
+
+.para-back {
+	background-color: rgba(240, 255, 255, 0.8);
+	padding: 10px;
+}
+
+.para_header {
+	text-align: center;
+}
+
+.para_reg {
+	display: block;
+	margin: auto;
+	text-indent: 2em;
+	text-align: left;
+	word-wrap: break-word;
+	width: 75%;
+	border-width: 6px;
+	border-style: solid;
+	border-radius: 25px;
+	font-family: Lora;
+	font-size: 20px;
+}
+
+.para_no_indent {
+	text-indent: 0em;
+}
+
+.para_no_border {
+	border-style: none;	
+}
+
+.parallax-body {
+	background-image: url("https://i0.wp.com/www.wallpapersbyte.com/wp-content/uploads/2015/06/Space-Universe-Galaxy-Nebulae-Stars-In-Blue-Purple-Orange-Color-WallpapersByte-com-1920x1080.jpg?w=1240");
+}
+
+.resize {
+	max-width: 10%;
+	max-height: 10%;
+}
+
+.section-title {
+	text-align: center;
+	font-family: 'Cabin Sketch', serif;
+	font-size: 72px;
+}
+
+.tabchar {
+	text-indent: 2em;
+}
+
+
+/*-----------------------------------------------------------------------------
+-------------------------------Parallax Nonsense-------------------------------
+-----------------------------------------------------------------------------*/
+.parallax1 {
+    /* The image used */
+    background-image: url("http://www.androidguys.com/wp-content/uploads/2015/11/Hdr-photography-nature-ocean-sun-beach-waves-2560-1600-48018-hd.jpg");
+
+    /* Set a specific height */
+    height: 700px;
+    
+    border-style: Solid;
+    border-width: 4px;
+    border-color: Orange;
+    border-radius: 200px;
+    
+    overflow: hidden;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 {
+    /* The image used */
+    background-image: url("https://www.walldevil.com/wallpapers/a50/bridge-tree-frost-ice-snow-winter-river-mountain-sky.jpg");
+
+    /* Set a specific height */
+    height: 700px; 
+    
+    border-style: Solid;
+    border-width: 4px;
+    border-color: Red;
+    border-radius: 200px;
+    
+    overflow: hidden;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Links to Google fonts used on this webpage-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet"> 
+
+    <!--Linked CSS stylesheet file & Bootstrap-->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="{{ url_for('static', filename='css/style1.css') }}"
+          type="text/css" rel="stylesheet" id="style-var">
+    <link href="{{ url_for('static', filename='css/def_page.css') }}" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="{{ url_for('static', filename='js/def_page.js') }}"></script>
+
+    <meta charset="UTF-8">
+    <title>Curtis' test website</title>
+</head>
+
+<body>
+
+    <ul id="Navbar">
+        <a href="/"> <li class="Horiz_list">Home</li> </a>
+        <a href="/experience"> <li class="Horiz_list">Experience</li> </a>
+        <a href="/contact_me"> <li class="Horiz_list">Contact Me</li> </a>
+        <a href="/CD-L"> <li class="Horiz_list">CD-L</li> </a>
+        <a href="/parallax_test"> <li class="Horiz_list">Parallax Test</li> </a>
+    </ul>
+
+    <div class="division padding-top">
+        <h1 class="header">Contact Me</h1>
+        <div class="slide1">
+            <h2 class="slide1-para paragraph para_reg">
+                <img class="Bunwave" src="{{ url_for('static', filename='resources/BunWave.png') }}">
+                <p>
+                    Here is a page that provides an example of how forms work in HTML. It includes
+                a few options: filling in your first & last name, selecting options from a dropdown
+                list, radio buttons, and more! Check it out below:
+                </p>
+                <form class="name_form" method="post" action="{{ url_for('contact_me.confirm_info') }}">
+                    First name: 
+                    <input type="text" name="firstname"><br><br>
+                    Last name: 
+                    <input type="text" name="lastname"><br><br>
+                    How old are you? 
+                    <input type="number" name="age" min="1" max="99"><br><br>
+                    Email address: 
+                    <input type="email" name="email"><br><br>
+                    Password: 
+                    <input type="password" name="password"><br><br>
+                    
+                    <!--radio button format-->
+                    <br>Main Programming Language:<br>
+                    <input type="radio" name="language" value="Python"> Python<br>
+                    <input type="radio" name="language" value="SQL"> SQL<br>
+                    <input type="radio" name="language" value="HTML"> HTML<br><br>
+                    
+                    Skill level (1 - beginner, 100 - expert): 
+                    <span id="SkillLevel"></span>
+                    <br>
+                    <input id="SkillSlider" type="range" name="skill_lvl" min="1" max = "100">
+                    <br>
+                    
+                    School:<br>
+                    <select class="minimal btn-primary" name="school">
+                        <option value="RIT">RIT</option>
+                        <option value="CCU">CCU</option>
+                        <option value="FSU">FSU</option>
+                    <span class="caret"></span>
+                    </select>
+                    
+                    <br><br>
+                    <input type="checkbox" name="terms_read" value="Terms">
+                    I have read the Terms of Agreement [I promise :) ].<br><br>
+                    <input type="submit" class="btn btn-primary" value="Submit">
+                    <input type="reset" class="btn btn-primary" value="Reset">
+                    
+                </form> 
+            </h2>
+        </div>
+    </div>
+
+</body>
+</html>
