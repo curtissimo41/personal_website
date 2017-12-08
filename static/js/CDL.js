@@ -3,10 +3,10 @@ $(document).ready(function() {
         url: "http://0.0.0.0:8080/get_crypto",
         success: function(response) {
             var crypt_list =
-                 ['ADT', 'ARK', 'BTC', 'BCH', 'BCN', 'ADA', 'DASH', 'ETH',
-                  'ETC', 'GAS', 'HSR', 'LSK', 'LTC', 'XMR', 'NEM', 'NEO', 'OMG',
-                  'QTUM', 'XRP', 'SC', 'STEEM', 'XLM', 'STRAT', 'PAY', 'WAVES',
-                  'ZEC', 'ZEN']
+                 ['ADA', 'ADT', 'ARK', 'BCH', 'BCN', 'BTC', 'DASH', 'ETC',
+                  'ETH', 'GAS', 'HSR', 'LSK', 'LTC', 'NEO', 'OMG', 'PAY',
+                  'QTUM', 'SC', 'STEEM', 'STRAT', 'WAVES', 'XEM', 'XLM', 'XMR',
+                  'XRP', 'ZEC', 'ZEN'];
 
             var parsed = JSON.parse(response.items);
 
