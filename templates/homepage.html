@@ -1,8 +1,10 @@
+<!--Welcome to my source code! Feel free to look around ;)-->
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-<!--Links to Google fonts used on this webpage-->
+	<!--Links to Google fonts used on this webpage-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" 
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" 
@@ -12,28 +14,31 @@
     <link href="https://fonts.googleapis.com/css?family=Lora" 
         rel="stylesheet">
 
-<!--Linked CSS stylesheet file, JS files, Bootstrap, & React-->
+	<!--Include jQuery library-->
     <script type="text/javascript" 
         src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
-        
+
+	<!--Include Bootstrap library-->
     <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" 
         rel="stylesheet" type="text/css">
-        
-    <script src="https://maxcdn.bootstrapcdn.com/
-				bootstrap/3.3.7/js/bootstrap.min.js">
-    </script>
 
+	<!--Page color styling (will be varied later)-->
     <link href="{{ url_for('static', filename='css/style1.css') }}"
           type="text/css" rel="stylesheet" id="style-var">
+
+	<!--Default page layout-->
     <link href="{{ url_for('static', filename='css/def_page.css') }}" 
         type="text/css" rel="stylesheet">
-    
+
+	<!--JS used specifically on the homepage-->
     <script type="text/javascript" 
         src="{{ url_for('static', filename='js/homepage.js') }}"></script>
+
+	<!--JS file for navbar button behavior, style1-->
     <script type="text/javascript" 
-        src="{{ url_for('static', filename='js/def_page.js') }}"></script>
+        src="{{ url_for('static', filename='js/style1.js') }}"></script>
         
-<!--Extra header info-->    
+	<!--Extra header info-->
     <meta charset="UTF-8">
     <title>Curtis' test website</title>
 </head>
@@ -50,7 +55,7 @@
     </ul>
 
     <div class="division padding-top">
-        <h1 class="header"> Welcome to my test website!<br>
+        <h1 class="header"> Welcome to my website!<br>
         <p class="paragraph">↓↓↓ Click here to see my LinkedIn page! ↓↓↓</p>
             <a href="https://www.linkedin.com/in/geigecur/" target="_blank">
                 <img class="resize" src="{{ url_for('static', 

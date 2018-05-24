@@ -1,6 +1,8 @@
 .parallax1 {
     /* The image used */
-    background-image: url("http://wallup.net/wp-content/uploads/2015/12/198660-palm_trees-resort-beach-tropical-water-bungalow-sea-summer-nature-landscape.jpg");
+    background-image: url("http://wallup.net/wp-content/uploads/2015/12/
+        "198660-palm_trees-resort-beach-tropical-water-bungalow-sea-summer-"
+        "nature-landscape.jpg");
 
     /* Set a specific height */
     min-height: 100%;
@@ -14,7 +16,9 @@
 
 .parallax2 {
     /* The image used */
-    background-image: url("http://wallup.net/wp-content/uploads/2015/12/198959-fall-fence-trees-mountain-forest-Chile-Patagonia-snowy_peak-grass-cottage-yellow-orange-nature-landscape.jpg");
+    background-image: url("http://wallup.net/wp-content/uploads/2015/12/"
+        "198959-fall-fence-trees-mountain-forest-Chile-Patagonia-snowy_peak-"
+        "grass-cottage-yellow-orange-nature-landscape.jpg");
 
     /* Set a specific height */
     min-height: 100%; 

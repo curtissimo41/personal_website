@@ -31,7 +31,7 @@ def get_crypto_prices():
 
     :return: Sorted, filtered list of Crypto objects
     """
-	url = "https://livemarketcap.com/all"
+	url = "https://coinmarketcap.com/all/views/all"
 	headers = {
 		'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 '
 		              '(KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36'}
@@ -47,6 +47,7 @@ def get_crypto_prices():
 
 	crypto_list = []  # Initial list of Crypto objects
 
+	"""
 	# Loop through <div class="column scrollable"> to get more in-depth info
 	for item in soup.find_all("div", "column scrollable"):
 		# Loop through items under <tbody> tag for price, 24h change, & volume
@@ -66,6 +67,27 @@ def get_crypto_prices():
 				new_curr = Crypto(symbol, price, pct_change, volume)
 				crypto_list.append(new_curr)
 
+		break
+	"""
+
+	# Loop through <div class="table-responsive compact-name-column"> to get
+	# more in-depth info
+	for item in soup.find_all("div", "table-responsive compact-name-column"):
+		# Loop through each row in the table containing crypto information
+		for item2 in item.find_all(id="currencies-all"):
+			# Loop through each piece of info provided for each crypto
+			for item3 in item2.tbody.find_all("tr"):
+				symbol = item3.find("span").get_text()
+				if symbol in checklist:
+					price = item3.find_all("td", "no-wrap text-right")[0] \
+						.find("a").get_text()
+					pct_change = item3.find_all("td")[8].get_text()
+					volume = item3.find_all("td")[6].get_text().strip()
+					# Assign the symbol, price, 24h % change, & volume to
+					# current Crypto object
+					new_curr = Crypto(symbol, price, pct_change, volume)
+					crypto_list.append(new_curr)
+			break
 		break
 
 	# sorting, then filtering, the crypto list

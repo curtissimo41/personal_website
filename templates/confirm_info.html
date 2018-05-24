@@ -1,21 +1,38 @@
+<!--Welcome to my source code! Feel free to look around ;)-->
+
 <!DOCTYPE html>
 <html>
     
 <head>
     <!--Links to Google fonts used on this webpage-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora"
+        rel="stylesheet">
 
-    <!--Linked CSS stylesheet file & Bootstrap-->
-    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
-    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!--Include jQuery library-->
+    <script type="text/javascript"
+        src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+
+	<!--Include Bootstrap library-->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}"
+        rel="stylesheet" type="text/css">
+
+	<!--Page color styling (will be varied later)-->
     <link href="{{ url_for('static', filename='css/style1.css') }}"
           type="text/css" rel="stylesheet" id="style-var">
-    <link href="{{ url_for('static', filename='css/def_page.css') }}" type="text/css" rel="stylesheet">
-    <script type="text/javascript" src="{{ url_for('static', filename='js/def_page.js') }}"></script>
-    
+
+	<!--Default page layout-->
+    <link href="{{ url_for('static', filename='css/def_page.css') }}"
+        type="text/css" rel="stylesheet">
+
+	<!--JS file for navbar button behavior, style1-->
+    <script type="text/javascript"
+        src="{{ url_for('static', filename='js/style1.js') }}"></script>
+
+	<!--Extra header info-->
     <meta charset="UTF-8">
     <title>Curtis' test website</title>
 </head>

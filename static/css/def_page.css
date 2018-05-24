@@ -275,7 +275,9 @@ ul {
 }
 
 .parallax-body {
-	background-image: url("https://i0.wp.com/www.wallpapersbyte.com/wp-content/uploads/2015/06/Space-Universe-Galaxy-Nebulae-Stars-In-Blue-Purple-Orange-Color-WallpapersByte-com-1920x1080.jpg?w=1240");
+	background-image: url("https://i0.wp.com/www.wallpapersbyte.com/wp-content/\
+	uploads/2015/06/Space-Universe-Galaxy-Nebulae-Stars-In-Blue-Purple-Orange-\
+	Color-WallpapersByte-com-1920x1080.jpg?w=1240");
 }
 
 .resize {
@@ -299,7 +301,9 @@ ul {
 -----------------------------------------------------------------------------*/
 .parallax1 {
     /* The image used */
-    background-image: url("http://www.androidguys.com/wp-content/uploads/2015/11/Hdr-photography-nature-ocean-sun-beach-waves-2560-1600-48018-hd.jpg");
+    background-image: url("http://www.androidguys.com/wp-content/uploads/\
+	2015/11/Hdr-photography-nature-ocean-sun-beach-waves-2560-1600-48018-\
+	hd.jpg");
 
     /* Set a specific height */
     height: 700px;
@@ -320,7 +324,8 @@ ul {
 
 .parallax2 {
     /* The image used */
-    background-image: url("https://www.walldevil.com/wallpapers/a50/bridge-tree-frost-ice-snow-winter-river-mountain-sky.jpg");
+    background-image: url("https://www.walldevil.com/wallpapers/a50/bridge-\
+	tree-frost-ice-snow-winter-river-mountain-sky.jpg");
 
     /* Set a specific height */
     height: 700px; 
